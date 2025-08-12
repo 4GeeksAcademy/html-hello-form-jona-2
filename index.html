@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Payment Form Example</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+
 </head>
 <body>
 
@@ -20,21 +23,6 @@
 
       <form>
 
-        <div class="mb-3">
-          <label class="form-label">Payment Method</label>
-          <div class="btn-group w-100" role="group" aria-label="Payment methods">
-            <input type="radio" class="btn-check" name="paymentMethod" id="creditCard" autocomplete="off" checked>
-            <label class="btn btn-outline-primary" for="creditCard">Credit/Debit Card</label>
-
-            <input type="radio" class="btn-check" name="paymentMethod" id="paypal" autocomplete="off">
-            <label class="btn btn-outline-primary" for="paypal">PayPal</label>
-
-            <input type="radio" class="btn-check" name="paymentMethod" id="bank" autocomplete="off">
-            <label class="btn btn-outline-primary" for="bank">Bank Transfer</label>
-
-            <input type="radio" class="btn-check" name="paymentMethod" id="crypto" autocomplete="off">
-            <label class="btn btn-outline-primary" for="crypto">Crypto</label>
-          </div>
         </div>
 
         <div class="row mb-3">
@@ -91,14 +79,53 @@
 
         <div class="mb-3">
           <label class="form-label">We accept:</label>
-          <div class="d-flex flex-wrap align-items-center gap-3">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" height="40">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Mastercard-logo.png" alt="MasterCard" height="40">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="Amex" height="40">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" height="40">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin" height="40">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Ethereum_logo_2014.svg" alt="Ethereum" height="40">
-          </div>
+
+          <div class="p-2 bg-secondary rounded d-inline-flex gap-2">
+
+            <div class="d-flex align-items-center  rounded p-1 bg-secondary">
+              <div class="form-check me-1">
+                <input class="form-check-input" type="radio" name="tarjeta" id="visa">
+              </div>
+              <label for="visa" class="mb-0">
+                <i class="fab fa-cc-visa fa-sm text-white"></i>
+              </label>
+            </div>
+
+            <div class="d-flex align-items-center  rounded p-1 bg-secondary">
+              <div class="form-check me-1">
+                <input class="form-check-input" type="radio" name="tarjeta" id="mastercard">
+              </div>
+              <label for="mastercard" class="mb-0">
+                <i class="fab fa-cc-mastercard fa-sm text-white"></i>
+              </label>
+            </div>
+
+            <div class="d-flex align-items-center  rounded p-1 bg-secondary">
+              <div class="form-check me-1">
+                <input class="form-check-input" type="radio" name="tarjeta" id="amex">
+              </div>
+              <label for="amex" class="mb-0">
+                <i class="fab fa-cc-amex fa-sm text-white"></i>
+              </label>
+            </div>
+
+            <div class="d-flex align-items-center  rounded p-1 bg-secondary">
+              <div class="form-check me-1">
+                <input class="form-check-input" type="radio" name="tarjeta" id="discover">
+              </div>
+              <label for="discover" class="mb-0">
+                <i class="fab fa-cc-discover fa-sm text-white"></i>
+              </label>
+            </div>
+
+        </div>
+
+
+        </div>
+
+</div>
+        </div>
+
         </div>
 
         <div class="mb-3">
